@@ -20,12 +20,40 @@ https://www.schoolofnet.com/curso-iniciando-com-jquery-3/
 
 ## <a name="parte1">Introdução</a>
 
+- https://jquery.com/
+
+
 
 [Voltar ao Índice](#indice)
 
 ---
 
 ## <a name="parte2">Hello Word</a>
+
+```html
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <div id=""></div>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
+```
+
+```javascript
+$('div').html('<h1>José Malcher</h1>');
+```
+
 
 
 [Voltar ao Índice](#indice)

@@ -46,7 +46,6 @@ https://www.schoolofnet.com/curso-iniciando-com-jquery-3/
     <script src="js/jquery-3.3.1.js"></script>
     <script src="main.js"></script>
 </body>
-
 </html>
 ```
 
@@ -61,6 +60,29 @@ $('div').html('<h1>José Malcher</h1>');
 ---
 
 ## <a name="parte3">Seletores</a>
+
+```
+    <div id="jquery"></div>
+    <div class="jquery-version-3"></div>
+    <div class="jquery"></div>
+    <div></div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+```
+$('div').text('tag');
+$('#jquery').text('id');
+$('div[class*="jquery"]').text('class');
+
+$('li:even').text('Inpar');
+$('li:odd').text('Par');
+```
+
+```
 
 
 [Voltar ao Índice](#indice)

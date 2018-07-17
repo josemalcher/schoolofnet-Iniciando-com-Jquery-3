@@ -91,6 +91,49 @@ $('li:odd').text('Par');
 
 ## <a name="parte4">CSS</a>
 
+```html
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+```
+
+```js
+$('ul').css({'padding':0,'margin':0, 'list-style':'none'});
+$('li').text('Item impar').css('padding','10px');
+$('li:even').text('Inpar').css('background','#ccc');
+$('li:odd').text('Par').css({'background': '#aaa', 'color':'#fff'});
+```
+
+Refatorando/organizando
+```css
+    .ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .li-even{
+        padding: 10px;
+        background: #ccc;
+    }
+    .li-odd{
+        padding: 10px;
+        background: #aaa;
+        color: #fff;
+    }
+```
+
+```js
+}); */
+$('ul').addClass('ul');
+$('li:even').text('Inpar').addClass('li-even');
+$('li:odd').text('Par').addClass('li-odd');
+```
+
+
 
 [Voltar ao Índice](#indice)
 

@@ -233,6 +233,18 @@ $('ul').addClass('ul').append('<li>Adicionado Dinamicamente</li>');
 
 ## <a name="parte7">Animações</a>
 
+```css
+let  liHover = function(){
+    $(this).animate({'padding':'15px'}, 'slow');
+    //$(this).slideUp();
+    $(this).slideToggle();
+}
+let liHoverOut = function(){
+    $(this).animate({ 'padding': '10px' }, 'slow');
+    //$(this).slideDown();
+    $(this).slideToggle();
+}
+```
 
 [Voltar ao Índice](#indice)
 

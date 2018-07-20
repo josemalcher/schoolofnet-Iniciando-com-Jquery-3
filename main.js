@@ -3,11 +3,17 @@ let  liHover = function(){
     //$(this).hide('slow');
     //$(this).hide();
     //$(this).hide(1000);
-    $(this).toggle('slow');
+    //$(this).toggle('slow');
     //$(this).show();
+    $(this).animate({'padding':'15px'}, 'slow');
+    //$(this).slideUp();
+    $(this).slideToggle();
 }
 let liHoverOut = function(){
-    $(this).removeClass('li-hover');
+    //$(this).removeClass('li-hover');
+    $(this).animate({ 'padding': '10px' }, 'slow');
+    //$(this).slideDown();
+    $(this).slideToggle();
 }
 let liClick = function () {
     alert($(this).text());

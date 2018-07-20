@@ -252,6 +252,41 @@ let liHoverOut = function(){
 
 ## <a name="parte8">Document Ready x Windows Load</a>
 
+```html
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+</style>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="ajax.js"></script>
+<body>
+    <ul id="menu">
+<li>
+    <a href="pages/home.html">Home</a>
+</li>
+<li>
+    <a href="pages/sobre.html">Sobre Nós</a>
+    </ul>
+</li>
+    <div id="conteudo"></div>
+</body>
+</html>
+```
+
+```js
+$(document).ready(function(){
+    $('#menu a').click(function(){
+        return false;
+    })
+})
+```
 
 [Voltar ao Índice](#indice)
 
